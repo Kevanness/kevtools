@@ -1,7 +1,7 @@
 Package: kevtools
 Title: Personal tools to make using R easier
-Version: 0.1
-Date: 2023-06-15
+Version: 0.2
+Date: 2024-01-31
 Authors@R: 
     person("Kevin", "van Ness", , "kevanness@gmail.com", role = c("aut", "cre"))
 Description: Short functions and tools to make using R and maintaining
@@ -12,9 +12,11 @@ BugReports: https://github.com/Kevanness/kevtools/issues
 Depends:
     R (>= 4.3.0)
 Imports:
+    desc,
     fs,
     lintr,
     pkgload,
+    purrr,
     utils,
     xml2
 Suggests:
