@@ -1,16 +1,17 @@
 Package: kevtools
+Title: Personal tools to make using R easier
 Version: 0.1
 Date: 2023-06-15
-Title: Personal tools to make using R easier
-Authors@R: person("Kevin", "van Ness", role = c("aut", "cre"), email = "Kevanness@gmail.com")
-Depends:
-  R (>= 4.3.0)
-Imports:
-  testthat (>= 3.1.8)
-Suggests:
-Description: This package contains short functinos to try and make using R and maintaining packages easier.
+Authors@R: 
+    person("Kevin", "van Ness", , "kevanness@gmail.com", role = c("aut", "cre"))
+Description: This package contains short functions to try and make using R
+    and maintaining packages easier.
 License: GPL (>= 2)
 URL: https://github.com/Kevanness/kevtools
 BugReports: https://github.com/Kevanness/kevtools/issues
+Depends:
+    R (>= 4.3.0)
+Imports:
+    testthat (>= 3.1.8)
 Encoding: UTF-8
 RoxygenNote: 7.2.3
