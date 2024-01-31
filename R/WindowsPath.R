@@ -1,4 +1,4 @@
-#' @title WindowsPath
+#' @title Convert Paths In Windows
 #'
 #' @description Converts a traditional Windows file path with back slashes to
 #'   forward slashes that can be used within R.
@@ -11,13 +11,10 @@
 #'
 #' @export
 
-WindowsPath <- function(
-    path = readClipboard()
-){
-  
-  path <- gsub("\\\\", "/", path)
-  
-  writeClipboard(path)
-  
+WindowsPath <- function(path = utils::readClipboard()) {
+  # Cleans path
+  path <- fs::path(path)
+
+  utils::writeClipboard(path)
   return(path)
 }

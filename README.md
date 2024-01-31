@@ -1,12 +1,10 @@
 # kevtools
 
-The aim of kevtools is to make using R easier by providing functions that
-simplify and expedite common tasks.
+Short functions and tools to make using R and maintaining packages easier.
 
 ## Installation
 
 ```r
-# Install devtools from GitHub
-devtools::install_github("https://github.com/Kevanness/kevtools")
-
+# Install kevtools from GitHub
+pak::pak("Kevanness/kevtools")
 ```

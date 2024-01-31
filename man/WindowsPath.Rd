@@ -2,9 +2,9 @@
 % Please edit documentation in R/WindowsPath.R
 \name{WindowsPath}
 \alias{WindowsPath}
-\title{WindowsPath}
+\title{Convert Paths In Windows}
 \usage{
-WindowsPath(path = readClipboard())
+WindowsPath(path = utils::readClipboard())
 }
 \arguments{
 \item{path}{A file path with back slashes to be converted. Default uses the
