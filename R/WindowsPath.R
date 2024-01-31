@@ -14,7 +14,7 @@
 WindowsPath <- function(path = utils::readClipboard()) {
   # Cleans path
   path <- fs::path(path)
-
+  
   utils::writeClipboard(path)
   return(path)
 }
