@@ -13,7 +13,10 @@ Depends:
     R (>= 4.3.0)
 Imports:
     fs,
-    utils
+    lintr,
+    pkgload,
+    utils,
+    xml2
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -5,19 +5,17 @@
 #'   multiple packages without switching working directories or providing the
 #'   entire path.
 #'
-#' @param repoPath Path to the directory.
+#' @param package Folder/path the package is in, starting from the repoPath.
 #'
-#' @param path Folder/path the package is in, starting from the repoPath.
+#' @param repoPath Path to the directory.
 #'
 #' @return NULL
 #'
 #' @export
 
-LoadAll <- function(repoPath = getOption("repoPath"), package) {
+LoadAll <- function(package, repoPath = getOption("repoPath")) {
   # Combine paths to get full package path
   path <- fs::path(repoPath, package)
   
   pkgload::load_all(path)
-  
-  return(invisible(NULL))
 }

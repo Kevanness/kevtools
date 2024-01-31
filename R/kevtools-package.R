@@ -7,8 +7,5 @@
 #'
 #' @docType internal
 #'
-#' @importFrom fs path
-#' @importFrom utils readClipboard writeClipboard
-#'
 #' @noRd
 "_PACKAGE"
