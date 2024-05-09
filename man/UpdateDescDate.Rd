@@ -7,10 +7,10 @@
 UpdateDescDate(path)
 }
 \arguments{
-\item{path}{Path to a package.}
+\item{path}{path to a package}
 }
 \description{
 Updates the Date field in the package description file to the
-  current date. Useful for local packages that you want to date which won't
-  be uploaded to CRAN.
+current date. Useful for local packages that you want to date which won't
+be uploaded to CRAN.
 }

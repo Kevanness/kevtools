@@ -7,13 +7,13 @@
 LoadAll(package, repoPath = getOption("repoPath"))
 }
 \arguments{
-\item{package}{Folder/path the package is in, starting from the repoPath.}
+\item{package}{folder/path the package is in, starting from the repoPath.}
 
-\item{repoPath}{Path to the directory.}
+\item{repoPath}{path to the directory.}
 }
 \description{
-This calls [pkgload::load_all()] which loads a package. This
-  splits the directory and package which can be useful for working on
-  multiple packages without switching working directories or providing the
-  entire path.
+This calls \code{\link[pkgload:load_all]{pkgload::load_all()}} which loads a package. This
+splits the directory and package which can be useful for working on
+multiple packages without switching working directories or providing the
+entire path.
 }

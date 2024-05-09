@@ -4,7 +4,7 @@
 #'   current date. Useful for local packages that you want to date which won't
 #'   be uploaded to CRAN.
 #'
-#' @param path Path to a package.
+#' @param path path to a package
 #'
 #' @return NULL
 #'
@@ -21,7 +21,10 @@ UpdateDescDate <- function(path) {
   # Set date
   desc::desc_set("Date", newDate, file = path)
   
-  # Message new dates
-  message(paste("Updating:", fs::path(path, "DESCRIPTION")))
-  message(paste0("Package date bumped from '", descDate, "' to '", newDate, "'"))
+  cli::cli_bullets(c(
+    "i" = "Updating: {.file {fs::fs_path(path, 'DESCRIPTION')}}",
+    "v" = "Package date bumped from {.var {descDate}} to {.var {newDate}}."
+  ))
+  
+  return(invisible(NULL))
 }

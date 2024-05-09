@@ -7,5 +7,4 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(kevtools)
-
 testthat::test_check("kevtools")

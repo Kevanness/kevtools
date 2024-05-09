@@ -7,9 +7,9 @@
 UpdateDescVersion(path)
 }
 \arguments{
-\item{path}{Path to a package.}
+\item{path}{path to a package.}
 }
 \description{
-Updates the version field in the package description file to a
-  new version.
+Updates the Version field in the package description file to a
+new version.
 }
