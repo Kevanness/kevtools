@@ -1,7 +1,7 @@
 Package: kevtools
 Title: Personal tools to make using R easier
 Version: 0.2.1
-Date: 2024-01-31
+Date: 2024-05-09
 Authors@R: 
     person("Kevin", "van Ness", , "kevanness@gmail.com", role = c("aut", "cre"))
 Description: Short functions and tools to make using R and maintaining

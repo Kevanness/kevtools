@@ -11,8 +11,8 @@
 
 NormalizePath <- function(path = utils::readClipboard()) {
   # Cleans path
-  path <- fs::fs_path(path)
+  path <- fs::path(path)
   
-  utils::writeClipboard(path)
+  utils::writeClipboard(as.character(path))
   return(path)
 }

@@ -22,7 +22,7 @@ UpdateDescDate <- function(path) {
   desc::desc_set("Date", newDate, file = path)
   
   cli::cli_bullets(c(
-    "i" = "Updating: {.file {fs::fs_path(path, 'DESCRIPTION')}}",
+    "i" = "Updating: {.file {fs::path(path, 'DESCRIPTION')}}",
     "v" = "Package date bumped from {.var {descDate}} to {.var {newDate}}."
   ))
   

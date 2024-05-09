@@ -14,6 +14,6 @@
 #' @export
 
 LoadAll <- function(package, repoPath = getOption("repoPath")) {
-  fs::fs_path(repoPath, package) |>
+  fs::path(repoPath, package) |>
     pkgload::load_all()
 }

@@ -32,7 +32,7 @@ UpdateDescVersion <- function(path) {
   # Bump to new version or return if 0 is used to exit
   if (bumpTo != 0) {
     cli::cli_bullets(c(
-      "i" = "Updating: {.file {fs::fs_path(path, 'DESCRIPTION')}}",
+      "i" = "Updating: {.file {fs::path(path, 'DESCRIPTION')}}",
       "v" = "Package version bumped from {.var {descVersion}} to {.var {bumpTo}}."
     ))
     suppressMessages(desc::desc_bump_version(which = bumpTo, file = path))
