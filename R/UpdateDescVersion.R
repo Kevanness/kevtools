@@ -38,5 +38,5 @@ UpdateDescVersion <- function(path) {
     suppressMessages(desc::desc_bump_version(which = bumpTo, file = path))
   }
   
-  return(invisible(NULL))
+  invisible()
 }

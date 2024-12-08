@@ -26,5 +26,5 @@ UpdateDescDate <- function(path) {
     "v" = "Package date bumped from {.var {descDate}} to {.var {newDate}}."
   ))
   
-  return(invisible(NULL))
+  invisible()
 }
