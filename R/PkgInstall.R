@@ -9,5 +9,5 @@
 
 PkgInstall <- function(pkg, upgrade = TRUE) {
   pak::pak_cleanup(force = TRUE)
-  pak::pkg_install(pkg = pkg, upgrade = upgrade)
+  pak::pkg_install(pkg = pkg, upgrade = upgrade, ask = FALSE)
 }
