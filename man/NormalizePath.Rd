@@ -4,13 +4,16 @@
 \alias{NormalizePath}
 \title{Normalize Path}
 \usage{
-NormalizePath(path = utils::readClipboard())
+NormalizePath(path = utils::readClipboard(), mustWork = FALSE)
 }
 \arguments{
-\item{path}{file path to normalize.}
+\item{path}{A character vector of one or more paths.}
+
+\item{mustWork}{boolean whether the path must be a real path.}
 }
 \value{
-converted path, will also write the path to the clipboard.
+returns the canonical path, eliminating any symbolic links and the
+special references.
 }
 \description{
 Converts a file path to always use forward slashes and never
